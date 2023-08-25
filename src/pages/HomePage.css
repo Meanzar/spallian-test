@@ -1,0 +1,28 @@
+.home {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+input {
+    width: fit-content;
+    background-color: #ECE2D0;
+}
+.movie-card {
+    width: 200px;  
+    border: 2px solid ;
+    overflow: hidden;
+    transition: width 0.3s, background-color 0.3s, transform 0.3s;
+    margin: 10px;
+    background-color: #026C7C;
+}
+.movie-card:hover {
+    width: 300px;
+    height: 500px;
+    overflow: visible;
+    background-color: #ff6b6b;
+    transform: scale(1.05);
+}
