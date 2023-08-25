@@ -29,11 +29,15 @@ export default function MovieDetails() {
                 to={`/${Number(filteredMovie.id)}`} 
                 state={{movie: filteredMovie}} // Sauvegarde les données dans l'useLocation pour l'envoyer à d'autre Route
                 key={filteredMovie.id} 
-                className='movie-card'>
+                className='movie-card'
+                style={{backgroundImage: `url(https://image.tmdb.org/t/p/original/${filteredMovie.poster})`, backgroundSize: 'cover' }}
+                >
                     <h1 className='card__title'>{filteredMovie.title}</h1>
-                    <img src={`https://image.tmdb.org/t/p/original/${filteredMovie.poster}`} width={"50px"} alt= "Visuel du poster du film" className='card__poster'></img>
-                    <p className='card__overview'>{filteredMovie.overview}</p>
-                    <p >Rate : {filteredMovie.rating}</p>
+                    <div className='card__filter'></div>
+                    <div className=' card__infos'>
+                        <p className='card__overview'>{filteredMovie.overview}</p>
+                        <p >Rate : {filteredMovie.rating}</p>
+                    </div>
                 </Link>
             </>
         )

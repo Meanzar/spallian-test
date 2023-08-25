@@ -1,5 +1,5 @@
 import axios from "axios";
-  // axios transforme automatiquement les données collectés en json
+  // Axios transforme automatiquement les données collectés en json
   export default async function getMovies(setDetails) {
   try {
       const response = await axios.get('https://api.themoviedb.org/3/discover/movie?api_key=78fbca37ecb7b737ea3114f0a364d858') // clé publique
@@ -17,4 +17,4 @@ import axios from "axios";
       alert(`Une erreur s'est produite : ${error.message}`);
     }
   }
-// Ici sera écrit les autres fonctions qui utiliserons l'api : 
+// Ici sera écrit les autres fonctions qui utiliserons l'Api : 
