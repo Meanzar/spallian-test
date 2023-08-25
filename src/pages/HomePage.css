@@ -1,0 +1,45 @@
+.home {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+input {
+    width: fit-content;
+    background-color: #ECE2D0;
+}
+.movie-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;  
+    height: 500px;
+    border: 2px solid ;
+    overflow: hidden;
+    transition: width 0.3s, background-color 0.3s, transform 0.3s;
+    margin: 10px;
+    background-color: #026C7C;
+}
+.movie-card:hover {
+    overflow: visible;
+    transform: scale(1.05);
+}
+.card__overview {
+    padding: 10px;
+}
+
+.card__infos {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 55%,rgba(0,0,0,1) 100%);
+}
+.card__filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:black;
+    opacity: 10%;
+    z-index: 0;
+}

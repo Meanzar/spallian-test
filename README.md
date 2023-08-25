@@ -1,3 +1,11 @@
+Romain DANIZEL 
+
+# Documentation
+
+This is an app who use TMDB Free API and display a list of movies
+
+
+
 # **Technical test**
 
 # Objective

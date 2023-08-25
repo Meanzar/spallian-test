@@ -1,0 +1,8 @@
+.header {
+    border-bottom: 2px solid #ECE2D0;
+}
+
+.header__title {
+    color: #332E3C;
+    text-align: center;
+}
